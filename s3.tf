@@ -23,7 +23,13 @@ status = "Enabled"
 }
 }
 
-
+terraform {
+backend "s3" {
+region = "ap-southeast-2"
+bucket = "hindu.flm77.moonobucket"
+key = "prod/terraform.tfstate"
+}
+}
 
 
 
